@@ -23,11 +23,11 @@ class BaseUnit(ABC):
 
     @property
     def health_points(self):
-        return self.hp
+        return round(self.hp,1)
 
     @property
     def stamina_points(self):
-        return self.stamina
+        return round(self.hp,1)
 
     def equip_weapon(self, weapon: Weapon):
         return f"{self.name} экипирован оружием {weapon}"
