@@ -15,7 +15,7 @@ class UnitClass:
 
 
 WarriorClass = UnitClass("Warrior", 60.0, 30.0, 0.8, 0.9, 1.2,
-                         FuryPunch)  # TODO Инициализируем экземпляр класса UnitClass и присваиваем ему необходимые значения аттрибуотов
+                         FuryPunch)
 
 ThiefClass = UnitClass("Trief", 50.0, 25.0, 1.5, 1.2, 1.0, HardShot)
 
