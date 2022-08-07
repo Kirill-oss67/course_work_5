@@ -5,6 +5,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from unit import BaseUnit
 
+
 class Skill(ABC):
     """
     Базовый класс умения
@@ -51,6 +52,7 @@ class FuryPunch(Skill):
         self.user.stamina -= self.stamina
         self.target.get_damage(self.damage)
         return f"{self.user.name} использует {self.name} и наносит {self.damage} урона сопернику"
+
 
 class HardShot(Skill):
     name = "Мощный укол"
