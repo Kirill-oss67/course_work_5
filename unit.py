@@ -13,7 +13,7 @@ class BaseUnit(ABC):
 
     def __init__(self, name: str, unit_class: UnitClass, weapon: Weapon, armor: Armor):
 
-        self.name = name
+        self.name = str(name)
         self.unit_class = unit_class
         self.hp = unit_class.max_health
         self.stamina = unit_class.max_stamina
